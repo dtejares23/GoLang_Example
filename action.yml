@@ -1,0 +1,8 @@
+name: "maingo"
+description: "GoLang Main file"
+
+runs: 
+  using: composite
+  steps:
+  - run: go run ${{ github.action_path }}/main.go
+  shell: bash
